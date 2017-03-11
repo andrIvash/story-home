@@ -1,0 +1,64 @@
+.product {
+  color: $color-nonactive;
+  font-family: $base-font;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: rem(40px);
+  min-height: rem(405px);
+  position: relative;
+  width: rem(263px);
+}
+
+.product_new::after {
+  background-color: #1274d3;
+  background-image: linear-gradient(left, transparent 0%, rgba(255, 255, 255, 0.5) 99%, rgba(255, 255, 255, 0.5) 100%);
+  border-radius: rem(12px);
+  color: $color-white;
+  content: 'new';
+  display: block;
+  font-family: $sign-font;
+  font-size: rem(11px);
+  font-weight: 700;
+  height: rem(25px);
+  left: rem(30px);
+  line-height: rem(25px);
+  position: absolute;
+  text-transform: uppercase;
+  top: rem(20px);
+  width: rem(48px);
+}
+
+.product__img-wrap {
+  height: rem(336px);
+  margin-bottom: rem(26px);
+  width: rem(263px);
+}
+
+.product__img {
+  max-height: 100%;
+  width: auto;
+}
+
+.product__descr {
+  color: $color-main;
+  margin-bottom: rem(10px);
+}
+
+.product__price {
+  font-family: $sign-font;
+  text-align: center;
+}
+
+
+.product__price-real.product__price-real_old {
+  text-decoration: line-through;
+}
+
+.product__price-sale {
+  color: $color-sale;
+  margin-left: 10px;
+}
+
+.product__price-sale > .dollar {
+  fill: $color-sale;
+}

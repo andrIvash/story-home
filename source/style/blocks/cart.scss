@@ -1,0 +1,28 @@
+.cart {
+  display: inline-block;
+}
+
+.cart__title {
+  color: $color-nonactive;
+  display: inline-block;
+  font-family: $sign-font;
+  font-size: rem(12px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart__ammount {
+  border: 2px solid $color-active;
+  border-radius: 50%;
+  color: $color-main;
+  display: inline-block;
+  font-family: $sign-font;
+  font-size: rem(12px);
+  font-weight: 700;
+  height: rem(48px);
+  line-height: rem(48px);
+  margin-left: rem(20px);
+  text-align: center;
+  text-transform: uppercase;
+  width: rem(48px);
+}

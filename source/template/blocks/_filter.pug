@@ -1,0 +1,4 @@
+ul.filter.main__filter
+  each val, index in ['All', 'T-shirts', 'sweaters', 'Shorts', 'jackets', ' ACCESSOIRES']
+    li.filter__elem
+      a.filter__link(href='#', title=val, class={'filter__link_active': index==0})= val

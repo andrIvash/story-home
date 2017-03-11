@@ -1,2 +1,21 @@
+.footer .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 101px;
+}
+
 .footer {
+  .main-menu__link.main-menu__link_sale {
+    color: $color-nonactive;
+  }
+  .main-menu__link.main-menu__link_active {
+    color: $color-nonactive;
+
+    &::after {
+      display: none;
     }
+  }
+}
+
+@import 'blocks/copyright';

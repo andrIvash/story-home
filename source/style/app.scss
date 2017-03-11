@@ -49,7 +49,7 @@ body {
   &::after {
     content: '';
     display: block;
-    height: 132px;
+    height: 101px;
   }
 }
 
@@ -61,8 +61,8 @@ body {
 
 .footer {
   background-color: $color-layout;
-  height: 132px;
-  margin-top: -132px;
+  height: 101px;
+  margin-top: -101px;
 }
 
 

@@ -1,6 +1,49 @@
-.main {
-    
-   
-
+.main .container {
+  text-align: center;
 }
 
+.title {
+  color: $color-main;
+  font-family: $base-font;
+  font-size: rem(58px);
+  font-weight: 400;
+  margin-bottom: rem(60px);
+}
+
+.dollar {
+  fill: $color-nonactive;
+  height: rem(12px);
+  width: rem(12px);
+}
+
+.filter.main__filter {
+  margin-bottom: rem(40px);
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  max-width: 1150px;
+  padding: 0;
+}
+
+.products__item {
+  display: inline-block;
+  padding: 0 rem(10px);
+}
+
+.loader {
+  color: $color-nonactive;
+  display: inline-block;
+  font-family: $sign-font;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+@import '../blocks/filter';
+@import '../blocks/product';
+@import '../blocks/subscribe';

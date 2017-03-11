@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 100px; 
+  margin-bottom: 100px;
 }
 
 .header .container {
@@ -31,7 +31,17 @@
   align-items: stretch;
 }
 
+.header__inner-info {
+  .search {
+    margin-left: rem(10px);
+    position: relative;
+    top: rem(5px);  
+  }
+}
+
 @import '../blocks/top-menu';
 @import '../blocks/currency';
 @import '../blocks/language';
 @import '../blocks/main-menu';
+@import '../blocks/cart';
+@import '../blocks/search';

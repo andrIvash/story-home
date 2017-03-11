@@ -1,0 +1,14 @@
+.search {
+  cursor: pointer;
+  display: inline-block;
+
+  .icon {
+    fill: $color-nonactive;
+    height: 14px;
+    width: 14px;
+  }
+
+  &:hover > .icon {
+    fill: $color-main;
+  }
+}

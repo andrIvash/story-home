@@ -1,0 +1,83 @@
+- 
+  var values = [
+    {
+      url: 'assets/img/img1.png',
+      alt: 'image',
+      descr: 'Printed swimsuit',
+      price: '23',
+      sale: ''
+    },
+    {
+      url: 'assets/img/img2.png',
+      alt: 'image',
+      descr: 'Jogging bermuda shorts',
+      price: '36',
+      sale: '12'
+    },
+    {
+      url: 'assets/img/img3.png',
+      alt: 'image',
+      descr: 'Basic beach flip flops',
+      price: '9',
+      sale: ''
+    },
+    {
+      url: 'assets/img/img4.png',
+      alt: 'image',
+      descr: 'Black sunglasses',
+      price: '29',
+      sale: ''
+    },
+    {
+      url: 'assets/img/img5.png',
+      alt: 'image',
+      descr: 'Long sleeved twill shirt',
+      price: '20',
+      sale: ''
+    },
+    {
+      url: 'assets/img/img6.png',
+      alt: 'image',
+      descr: 'Basic swimsuit',
+      price: '36',
+      sale: ''
+    },
+    {
+      url: 'assets/img/img7.png',
+      alt: 'image',
+      descr: 'Bleached shorts',
+      price: '12',
+      sale: ''
+    },
+    {
+      url: 'assets/img/img8.png',
+      alt: 'image',
+      descr: 'T-shirt with lower panel',
+      price: '32',
+      sale: '12'
+    }
+  ];
+
+
+ul.products.main__products
+  each val, index in values
+    li.products__item.product(class={'product_new': index==2})
+        .product__img-wrap
+          img.product__ing(src=val.url, alt=val.alt)
+        .product__descr= val.descr
+        .product__price
+          if val.sale !== ''
+            span.product__price-real.product__price-real_old
+              svg.dollar
+                use(xlink:href='assets/img/sprite/sprite.svg#dollar')
+              =val.price   
+            span.product__price-sale
+              svg.dollar
+                use(xlink:href='assets/img/sprite/sprite.svg#dollar')
+              =val.sale
+          else
+            span.product__price-real
+              svg.dollar
+                use(xlink:href='assets/img/sprite/sprite.svg#dollar')
+              =val.price 
+                       

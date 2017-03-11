@@ -1,4 +1,4 @@
-.main-menu {
+.filter {
   display: inline-block;
   font-family: $sign-font;
   font-size: rem(12px);
@@ -9,7 +9,7 @@
   text-transform: uppercase;
 }
 
-.main-menu__elem {
+.filter__elem {
   display: inline-block;
   margin-left: rem(25px);
 
@@ -18,7 +18,7 @@
   }
 }
 
-.main-menu__link {
+.filter__link {
   color: $color-nonactive;
   position: relative;
   text-decoration: none;
@@ -36,7 +36,7 @@
   }
 }
 
-.main-menu__link.main-menu__link_active {
+.filter__link.filter__link_active {
   color: $color-main;
 
   &::after {
@@ -48,13 +48,5 @@
     position: absolute;
     top: 12px;
     width: 100%;
-  }
-}
-
-.main-menu__link.main-menu__link_sale {
-  color: $color-sale;
-
-  &:hover {
-    color: $color-main;  
   }
 }
