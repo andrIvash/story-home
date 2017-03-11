@@ -1,0 +1,7 @@
+.currency
+    .currency__selected Dollars
+    svg.icon
+      use(xlink:href='assets/img/sprite/sprite.svg#arrow_down')
+    ul.currency__list.hide
+      each val in ['Dollars', 'Rubles']
+        li.currency__item= val

@@ -1,0 +1,35 @@
+.top-menu {
+  display: inline-block;
+  font-family: $sign-font;
+  font-size: rem(11px);
+  font-weight: 700;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.top-menu__elem {
+  display: inline-block;
+  margin-left: rem(25px);
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.top-menu__link {
+  color: $color-nonactive;
+  text-decoration: none;
+
+  &:visited,
+  &:active {
+    color: $color-nonactive;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-main;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,145 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$s-001-social-media-name: 's-001-social-media';
+$s-001-social-media-x: 0px;
+$s-001-social-media-y: 0px;
+$s-001-social-media-offset-x: 0px;
+$s-001-social-media-offset-y: 0px;
+$s-001-social-media-width: 24px;
+$s-001-social-media-height: 24px;
+$s-001-social-media-total-width: 82px;
+$s-001-social-media-total-height: 53px;
+$s-001-social-media-image: '../images/png-sprite/sprite.png';
+$s-001-social-media: (0px, 0px, 0px, 0px, 24px, 24px, 82px, 53px, '../images/png-sprite/sprite.png', 's-001-social-media', );
+$s-002-black-name: 's-002-black';
+$s-002-black-x: 29px;
+$s-002-black-y: 0px;
+$s-002-black-offset-x: -29px;
+$s-002-black-offset-y: 0px;
+$s-002-black-width: 24px;
+$s-002-black-height: 24px;
+$s-002-black-total-width: 82px;
+$s-002-black-total-height: 53px;
+$s-002-black-image: '../images/png-sprite/sprite.png';
+$s-002-black: (29px, 0px, -29px, 0px, 24px, 24px, 82px, 53px, '../images/png-sprite/sprite.png', 's-002-black', );
+$s-003-error-name: 's-003-error';
+$s-003-error-x: 0px;
+$s-003-error-y: 29px;
+$s-003-error-offset-x: 0px;
+$s-003-error-offset-y: -29px;
+$s-003-error-width: 24px;
+$s-003-error-height: 24px;
+$s-003-error-total-width: 82px;
+$s-003-error-total-height: 53px;
+$s-003-error-image: '../images/png-sprite/sprite.png';
+$s-003-error: (0px, 29px, 0px, -29px, 24px, 24px, 82px, 53px, '../images/png-sprite/sprite.png', 's-003-error', );
+$s-004-correct-symbol-name: 's-004-correct-symbol';
+$s-004-correct-symbol-x: 29px;
+$s-004-correct-symbol-y: 29px;
+$s-004-correct-symbol-offset-x: -29px;
+$s-004-correct-symbol-offset-y: -29px;
+$s-004-correct-symbol-width: 24px;
+$s-004-correct-symbol-height: 24px;
+$s-004-correct-symbol-total-width: 82px;
+$s-004-correct-symbol-total-height: 53px;
+$s-004-correct-symbol-image: '../images/png-sprite/sprite.png';
+$s-004-correct-symbol: (29px, 29px, -29px, -29px, 24px, 24px, 82px, 53px, '../images/png-sprite/sprite.png', 's-004-correct-symbol', );
+$s-005-twitter-black-shape-name: 's-005-twitter-black-shape';
+$s-005-twitter-black-shape-x: 58px;
+$s-005-twitter-black-shape-y: 0px;
+$s-005-twitter-black-shape-offset-x: -58px;
+$s-005-twitter-black-shape-offset-y: 0px;
+$s-005-twitter-black-shape-width: 24px;
+$s-005-twitter-black-shape-height: 24px;
+$s-005-twitter-black-shape-total-width: 82px;
+$s-005-twitter-black-shape-total-height: 53px;
+$s-005-twitter-black-shape-image: '../images/png-sprite/sprite.png';
+$s-005-twitter-black-shape: (58px, 0px, -58px, 0px, 24px, 24px, 82px, 53px, '../images/png-sprite/sprite.png', 's-005-twitter-black-shape', );
+$s-006-envelope-name: 's-006-envelope';
+$s-006-envelope-x: 58px;
+$s-006-envelope-y: 29px;
+$s-006-envelope-offset-x: -58px;
+$s-006-envelope-offset-y: -29px;
+$s-006-envelope-width: 24px;
+$s-006-envelope-height: 24px;
+$s-006-envelope-total-width: 82px;
+$s-006-envelope-total-height: 53px;
+$s-006-envelope-image: '../images/png-sprite/sprite.png';
+$s-006-envelope: (58px, 29px, -58px, -29px, 24px, 24px, 82px, 53px, '../images/png-sprite/sprite.png', 's-006-envelope', );
+$spritesheet-width: 82px;
+$spritesheet-height: 53px;
+$spritesheet-image: '../images/png-sprite/sprite.png';
+$spritesheet-sprites: ($s-001-social-media, $s-002-black, $s-003-error, $s-004-correct-symbol, $s-005-twitter-black-shape, $s-006-envelope, );
+$spritesheet: (82px, 53px, '../images/png-sprite/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.language {
+  align-items: center;
+  display: flex;
+  font-family: $sign-font;
+  font-size: rem(11px);
+  font-weight: 700;
+  min-width: 75px;
+  padding: 0 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.language .icon {
+  fill: $color-nonactive;
+  height: rem(4px);
+  position: absolute;
+  right: rem(15px);
+  width: rem(7px);
+
+}
+
+.language__selected:hover + .icon{
+  fill: $color-main;
+}
+
+.language__selected {
+  color: $color-nonactive;
+  cursor: pointer;
+  min-width: 55px;
+  padding: rem(2px) rem(20px) rem(2px) rem(2px);
+
+  &:hover {
+    color: $color-main;
+  }
+}
+
+
+.language__list {
+  color: $color-nonactive;
+  left: rem(17px);
+  list-style: none;
+  margin: 0;
+  min-width: rem(20px);
+  opacity: 1;
+  padding: 0;
+  position: absolute;
+  top: rem(30px);
+  transition: opacity .1s linear;
+
+  &.hide {
+    opacity: 0;
+  }
+}
+
+.language__item {
+  cursor: pointer;
+
+  &:hover {
+    color: $color-main;
+  }
+}

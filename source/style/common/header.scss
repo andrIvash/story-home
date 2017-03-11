@@ -1,0 +1,37 @@
+.header {
+  margin-bottom: 100px; 
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;;
+}
+
+.header__top .container {
+  align-items: stretch;
+  min-height: rem(44px);
+}
+
+.header__bottom .container {
+  align-items: center;
+  min-height: rem(100px);
+}
+
+.header__top,
+.header__bottom {
+  border-bottom: 1px solid $color-layout;
+}
+
+.header__inner-left, .header__inner-right {
+  align-items: center;
+  display: flex;
+}
+
+.header__inner-right {
+  align-items: stretch;
+}
+
+@import '../blocks/top-menu';
+@import '../blocks/currency';
+@import '../blocks/language';
+@import '../blocks/main-menu';

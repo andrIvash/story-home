@@ -1,0 +1,7 @@
+.language
+    .language__selected ENG
+    svg.icon
+      use(xlink:href='assets/img/sprite/sprite.svg#arrow_down')
+    ul.language__list.hide
+      each val in ['ENG', 'RU']
+        li.language__item= val

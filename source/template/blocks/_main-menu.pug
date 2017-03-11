@@ -1,0 +1,4 @@
+ul.main-menu
+  each val, index in ['Home', 'Catalog', 'News', 'Sale', 'About', 'Contact']
+    li.main-menu__elem
+      a.main-menu__link(href='#', title=val, class={'main-menu__link_active': index==1, 'main-menu__link_sale': index==3})= val

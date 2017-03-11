@@ -1,0 +1,75 @@
+//------------------------------ fonts ---------------------------------------//
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+// @font-face {
+//     font-family: 'georgiaitalic';
+//     src: url('../fonts/georgia_italic-webfont.woff2') format('woff2'),
+//          url('../fonts/georgia_italic-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+
+
+
+//----------------------------------- variable --------------------------------//
+
+$color-layout: #eee;
+$color-main: #333;
+$color-sale: #fc411d;
+$color-nonactive: #a0a0a0;
+$color-active: #1274d3;
+$color-white: #fff;
+
+
+$sign-font: 'Lato', sans-serif;
+$base-font: 'Playfair Display', serif;
+
+
+
+//------------------------------ base styles ---------------------------------//
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  // min-width: 320px;
+  // font-family: $base-font;
+  // background-color: $color-green;
+}
+
+.wrapper {
+  height: auto !important;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 132px;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 5px;
+}
+
+.footer {
+  background-color: $color-layout;
+  height: 132px;
+  margin-top: -132px;
+}
+
+
+
+//------------------------------------- file import --------------------------//
+
+@import 'common/mixin';
+@import 'common/header';
+@import 'common/main-content';
+@import 'common/footer';
