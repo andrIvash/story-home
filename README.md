@@ -1,5 +1,9 @@
 # Landing for Store-home
 
+### Link to site
+[example](https://andrivash.github.io/story-home/)
+
+
 Getting started:
 
 1. clone this repo
