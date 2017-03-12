@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: rem(287px);
+  min-height: rem(284px);
 }
 
 .subscribe__sign {
@@ -26,7 +26,7 @@
   font-family: $base-font;
   font-size: rem(38px);
   font-weight: 400;
-  margin-bottom: rem(25px);
+  margin-bottom: rem(24px);
 }
 
 .subscribe__btn {
@@ -38,7 +38,7 @@
   font-family: Lato;
   font-size: rem(12px);
   font-weight: 700;
-  height: rem(50px);
+  height: rem(45px);
   line-height: 50px;
   padding-left: 20px;
   position: relative;
@@ -46,7 +46,7 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: background-color 300ms ease-out;
-  width: rem(302px);
+  width: rem(280px);
 
   &:visited,
   &:active {

@@ -5,17 +5,18 @@
   font-family: $sign-font;
   font-size: rem(11px);
   font-weight: 700;
+  letter-spacing: 1px;
   min-width: 75px;
-  padding: 0 15px;
+  padding: 0 21px;
   position: relative;
   text-transform: uppercase;
 }
 
 .currency .icon {
   fill: $color-nonactive;
-  height: rem(4px);
+  height: rem(7px);
   position: absolute;
-  right: rem(15px);
+  right: rem(20px);
   width: rem(7px);
 
 }
@@ -39,7 +40,7 @@
 .currency__list {
   background: $color-white;
   color: $color-nonactive;
-  left: rem(12px);
+  left: rem(18px);
   list-style: none;
   margin: 0;
   min-width: rem(20px);

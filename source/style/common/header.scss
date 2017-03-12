@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 100px;
+  margin-bottom: 87px;
 }
 
 .header .container {
@@ -46,10 +46,14 @@
 }
 
 .header__inner-info {
+  margin-right: rem(10px);
+
   .search {
     margin-left: rem(10px);
     position: relative;
-    top: rem(5px);
+  }
+  @include tablet {
+    margin-bottom: rem(20px);
   }
 }
 

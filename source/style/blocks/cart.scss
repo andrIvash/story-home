@@ -8,6 +8,7 @@
   font-family: $sign-font;
   font-size: rem(12px);
   font-weight: 700;
+  letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -32,10 +33,10 @@
   font-family: $sign-font;
   font-size: rem(12px);
   font-weight: 700;
-  height: rem(48px);
+  height: rem(44px);
   line-height: rem(48px);
-  margin-left: rem(20px);
+  margin: 0 rem(6px) 0 rem(13px);
   text-align: center;
   text-transform: uppercase;
-  width: rem(48px);
+  width: rem(44px);
 }

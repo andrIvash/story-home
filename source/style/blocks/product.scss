@@ -3,7 +3,7 @@
   font-family: $base-font;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: rem(40px);
+  margin-bottom: rem(30px);
   min-height: rem(405px);
   position: relative;
   width: rem(263px);
@@ -20,17 +20,17 @@
   font-size: rem(11px);
   font-weight: 700;
   height: rem(25px);
-  left: rem(30px);
+  left: rem(27px);
   line-height: rem(25px);
   position: absolute;
   text-transform: uppercase;
-  top: rem(20px);
+  top: rem(25px);
   width: rem(48px);
 }
 
 .product__img-wrap {
   height: rem(336px);
-  margin-bottom: rem(26px);
+  margin-bottom: rem(25px);
   width: rem(263px);
 }
 
@@ -41,7 +41,7 @@
 
 .product__descr {
   color: $color-main;
-  margin-bottom: rem(10px);
+  margin-bottom: rem(7px);
 }
 
 .product__price {

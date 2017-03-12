@@ -3,4 +3,8 @@
   font-family: $sign-font;
   font-size: rem(12px);
   font-weight: 700;
+
+  @include tablet {
+    margin-bottom: rem(20px);
+  }
 }

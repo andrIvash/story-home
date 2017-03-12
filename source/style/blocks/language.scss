@@ -4,17 +4,19 @@
   font-family: $sign-font;
   font-size: rem(11px);
   font-weight: 700;
-  min-width: 75px;
-  padding: 0 15px;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  min-width: 39px;
+  //padding: 0 15px;
   position: relative;
   text-transform: uppercase;
 }
 
 .language .icon {
   fill: $color-nonactive;
-  height: rem(4px);
+  height: rem(7px);
   position: absolute;
-  right: rem(15px);
+  right: rem(8px);
   width: rem(7px);
 
 }
@@ -26,8 +28,8 @@
 .language__selected {
   color: $color-nonactive;
   cursor: pointer;
-  min-width: 55px;
-  padding: rem(2px) rem(20px) rem(2px) rem(2px);
+  //min-width: 55px;
+  //padding: rem(2px) rem(12px) rem(2px) rem(2px);
 
   &:hover {
     color: $color-main;
@@ -37,7 +39,7 @@
 
 .language__list {
   color: $color-nonactive;
-  left: rem(17px);
+  left: rem(18px);
   list-style: none;
   margin: 0;
   min-width: rem(20px);

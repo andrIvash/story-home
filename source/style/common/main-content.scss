@@ -7,7 +7,7 @@
   font-family: $base-font;
   font-size: rem(58px);
   font-weight: 400;
-  margin-bottom: rem(60px);
+  margin-bottom: rem(55px);
 }
 
 .dollar {
@@ -17,7 +17,7 @@
 }
 
 .filter.main__filter {
-  margin-bottom: rem(40px);
+  margin-bottom: rem(50px);
 }
 
 .products {
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   list-style: none;
-  margin: 0;
+  margin: 0 0 rem(25px) 0;
   padding: 0;
   text-align: center;
 
@@ -36,7 +36,20 @@
 
 .products__item {
   display: inline-block;
-  padding: 0 rem(10px);
+  margin-left: rem(30px);
+
+  &:first-child, &:nth-child(6n-1) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 rem(10px);
+
+    &:first-child, &:nth-child(6n-1) {
+      margin-left: rem(10px);
+      margin-right: rem(10px);
+    }
+  }
 }
 
 .loader {
@@ -45,6 +58,7 @@
   font-family: $sign-font;
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 60px;
   text-transform: uppercase;
 }
