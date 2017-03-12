@@ -39,7 +39,8 @@
 
 .language__list {
   color: $color-nonactive;
-  left: rem(18px);
+  left: 0;
+  letter-spacing: 1px;
   list-style: none;
   margin: 0;
   min-width: rem(20px);
