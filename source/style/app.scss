@@ -33,24 +33,17 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  // min-width: 320px;
-  // font-family: $base-font;
-  // background-color: $color-green;
+  min-height: 100vh;
 }
 
 .wrapper {
-  height: auto !important;
-  min-height: 100%;
-  overflow: hidden;
+  flex: 1;
   padding: 0;
   position: relative;
 
-  &::after {
-    content: '';
-    display: block;
-    height: 101px;
-  }
 }
 
 .container {
@@ -61,8 +54,6 @@ body {
 
 .footer {
   background-color: $color-layout;
-  height: 101px;
-  margin-top: -101px;
 }
 
 

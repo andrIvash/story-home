@@ -3,6 +3,14 @@
   display: flex;
   justify-content: space-between;
   min-height: 101px;
+
+  @include phone {
+    flex-direction: column;
+
+    .logotype, .main-menu, .copyright {
+      margin: rem(10px) 0;
+    }
+  }
 }
 
 .footer {

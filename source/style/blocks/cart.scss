@@ -8,7 +8,20 @@
   font-family: $sign-font;
   font-size: rem(12px);
   font-weight: 700;
+  text-decoration: none;
   text-transform: uppercase;
+
+  &:visited,
+  &:active {
+    color: $color-nonactive;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $color-main;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 .cart__ammount {

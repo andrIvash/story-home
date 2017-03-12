@@ -1,8 +1,10 @@
 .main-menu {
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
   font-family: $sign-font;
   font-size: rem(12px);
   font-weight: 700;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -11,10 +13,10 @@
 
 .main-menu__elem {
   display: inline-block;
-  margin-left: rem(25px);
+  margin: 0 rem(10px);
 
-  &:first-child {
-    margin-left: 0;
+  @include phone {
+    margin: 0 rem(10px) rem(10px);
   }
 }
 
@@ -55,6 +57,6 @@
   color: $color-sale;
 
   &:hover {
-    color: $color-main;  
+    color: $color-main;
   }
 }

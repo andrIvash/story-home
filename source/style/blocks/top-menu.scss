@@ -16,6 +16,11 @@
   &:first-child {
     margin-left: 0;
   }
+
+  @media screen and (max-width: 400px) {
+    display: block;
+    margin-left: 0;
+  }
 }
 
 .top-menu__link {
